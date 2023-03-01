@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.41-1",
+    "sol-merger": "^4.3.0"
+  },
+  "scripts": {
+    "build-contracts": "sol-merger \"./contracts/Token.sol\" ./build"
+  }
+}

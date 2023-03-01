@@ -1,0 +1,379 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "Purchase",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "InvestorId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MyToken",
+				"outputs": [
+					{
+						"internalType": "contract Token",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "token",
+						"type": "uint256"
+					}
+				],
+				"name": "buy",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getID",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Token",
+						"name": "_myToken",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "investorAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "price",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "sell",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sellPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "seller",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newSellPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newBuyPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "setPrices",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"KAMIL SIR/PROJECT01/BUY-SELL/contracts/coinstar.sol": "coinstar"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/ERC20.sol": {
+			"keccak256": "0xb1a06d6f7c841ec494431a43717e1036d5ad07b9b34cc3987b55c15c059876e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://971e3b3e72f1f2c6ed0d36249a232ccf3c8b66b18d45f3969049bc56d364dfbc",
+				"dweb:/ipfs/QmbHHrT93oMJXBT376shFAxL1Jr2iEGDKmi16CsCsNc6yn"
+			]
+		},
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/IERC20.sol": {
+			"keccak256": "0x22be16e7c8e017dafb33a837203c3eef15c706e2788109b3c1d2efce28b34ca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4db832e6d447f15e1c85ecdd1aab95f085ce44056e8b89dcdccddb7dde07d081",
+				"dweb:/ipfs/QmZbZATmLNYzm8z2sqS6UNL1wJF6hss6DUczjvVrLGRjd3"
+			]
+		},
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/Token.sol": {
+			"keccak256": "0xf5ed5867c491f099bead4c16abf9b8a9a446e11f460b1572bac53b175e4d8b60",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0dcf752d1db95eb3756d0fc35cada74289c3bebbffb1f79147482c96edccdc2b",
+				"dweb:/ipfs/QmPppRzHBBxQPariECT5CEKWGgBVU2bfet8Kvk5digLgYe"
+			]
+		},
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/coinstar.sol": {
+			"keccak256": "0xacccccea7a30a28144bb2d383c998c441c6ecbacdbc3165b72c122a13a9a423e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4698490907b5c56dca93e53c5b017fe3088fc45a05085678e1a163a84aed7f32",
+				"dweb:/ipfs/QmUQSp6y4T8LctSxUPuWXGKLAzaZyti98WX1sQJuwExDHH"
+			]
+		},
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/extensions/IERC20Metadata.sol": {
+			"keccak256": "0xef59398dcddbdcef4c0cfef30e9c71e773fbe92e87957e04c313b460b3e45901",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46161c237e21d7b2441d572f2ec7313cf86d3ecea9b5e8907df7778c2eb75141",
+				"dweb:/ipfs/QmUJX3QbTV7WThtj5jmsmp69SXrM63CdSsBQhLK35Myk18"
+			]
+		},
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/utils/Context.sol": {
+			"keccak256": "0xabb410cd2a049f452d42e4198ad04cbd65359fbc46d0cda788bafdeb7752fadc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7ad287f93359a323039a0b23efd74714c597bc13af362515746c347f559dc3b9",
+				"dweb:/ipfs/QmbX9yDbNH5vDnsKonxLrS9rC3mySdKBRK9HFmGrEe7nxB"
+			]
+		},
+		"KAMIL SIR/PROJECT01/BUY-SELL/contracts/utils/Ownable.sol": {
+			"keccak256": "0xf2ced77777e73f99b2361e4143012ce902aecb8a81fb48cd798524472a973701",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://240a9fed0d7239c958ecb7af3b0a6a4e7654d57b249f0da489572d008929a8b9",
+				"dweb:/ipfs/QmeZ2TEM3xcNGM6Wp7DyiRnMrSwTLbajtRJ4Cihts8f9wH"
+			]
+		}
+	},
+	"version": 1
+}
